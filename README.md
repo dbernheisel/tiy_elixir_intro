@@ -13,3 +13,6 @@
 * Install Phoenix archive - `mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez`
 * Checkout the project.
 * `mix deps.get`
+
+## Presentation
+https://docs.google.com/presentation/d/1VQoM62tjpJy_SBwX-6q2GJmW9V09zxquLADxwZ6s0e4/edit?usp=sharing
