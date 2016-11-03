@@ -17,6 +17,7 @@
         <nav role="navigation">
           <ul class="nav nav-pills pull-right">
             <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
+            <li><%= link("Todos", to: todo_path(@conn, :index)) %></li>
           </ul>
         </nav>
         <span class="logo"></span>
