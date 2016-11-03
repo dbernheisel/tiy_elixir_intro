@@ -8,12 +8,3 @@ config :todo_web, TodoWeb.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
-
-# Configure your database
-config :todo_web, TodoWeb.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "todo_web_test",
-  hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox

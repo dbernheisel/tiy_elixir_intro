@@ -30,7 +30,7 @@ defmodule TodoWeb.Web do
     quote do
       use Phoenix.Controller
 
-      alias TodoWeb.Repo
+      alias TodoCore.Repo
       import Ecto
       import Ecto.Query
 
@@ -65,7 +65,7 @@ defmodule TodoWeb.Web do
     quote do
       use Phoenix.Channel
 
-      alias TodoWeb.Repo
+      alias TodoCore.Repo
       import Ecto
       import Ecto.Query
       import TodoWeb.Gettext

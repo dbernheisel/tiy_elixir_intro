@@ -5,12 +5,6 @@ use Mix.Config
 config :todo_core,
   ecto_repos: [TodoCore.Repo]
 
-config :todo_core, TodoCore.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  database: "todo_core_repo",
-  hostname: "localhost"
-
-
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
 # file won't be loaded nor affect the parent project. For this reason,
@@ -36,4 +30,4 @@ config :todo_core, TodoCore.Repo,
 # Configuration from the imported file will override the ones defined
 # here (which is why it is important to import them last).
 #
-#     import_config "#{Mix.env}.exs"
+import_config "#{Mix.env}.exs"

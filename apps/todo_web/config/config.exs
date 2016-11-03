@@ -7,7 +7,7 @@ use Mix.Config
 
 # General application configuration
 config :todo_web,
-  ecto_repos: [TodoWeb.Repo]
+  ecto_repos: []
 
 # Configures the endpoint
 config :todo_web, TodoWeb.Endpoint,

@@ -8,8 +8,6 @@ defmodule TodoWeb do
 
     # Define workers and child supervisors to be supervised
     children = [
-      # Start the Ecto repository
-      supervisor(TodoWeb.Repo, []),
       # Start the endpoint when the application starts
       supervisor(TodoWeb.Endpoint, []),
       # Start your own worker by calling: TodoWeb.Worker.start_link(arg1, arg2, arg3)

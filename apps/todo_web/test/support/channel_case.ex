@@ -20,7 +20,7 @@ defmodule TodoWeb.ChannelCase do
       # Import conveniences for testing with channels
       use Phoenix.ChannelTest
 
-      alias TodoWeb.Repo
+      alias TodoCore.Repo
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
@@ -32,10 +32,10 @@ defmodule TodoWeb.ChannelCase do
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(TodoWeb.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(TodoCore.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(TodoWeb.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(TodoCore.Repo, {:shared, self()})
     end
 
     :ok

@@ -1,4 +1,4 @@
 ExUnit.start
 
-Ecto.Adapters.SQL.Sandbox.mode(TodoWeb.Repo, :manual)
+Ecto.Adapters.SQL.Sandbox.mode(TodoCore.Repo, :manual)
 
